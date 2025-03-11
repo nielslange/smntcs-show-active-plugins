@@ -3,7 +3,7 @@
 Contributors: 		nielslange
 Tags: 				Plugins, View active plugins
 Stable tag: 		1.0
-Tested up to: 		6.2
+Tested up to: 		6.7
 Requires PHP: 		7.4
 Requires at least: 	5.2
 License: 			GPL v2 or later
@@ -27,6 +27,6 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
-= 1.0 (2023.04.23) =
+= 1.0 (2025.03.11) =
 
 - Initial release
