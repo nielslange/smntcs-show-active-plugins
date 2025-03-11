@@ -22,6 +22,7 @@
 		"prettier": "npm:wp-prettier@^2.8.5"
 	},
 	"scripts": {
+		"bundle": "bash ./bin/bundle.sh",
 		"phpcbf": "composer run phpcbf",
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",
