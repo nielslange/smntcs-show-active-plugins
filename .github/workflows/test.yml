@@ -12,12 +12,16 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v2
+
       - name: Show PHPCS sniffs
         run: ./vendor/bin/phpcs -i
+
       - name: Show PHPCS version
         run: ./vendor/bin/phpcs --version
+
       - name: Run PHP_CodeSniffer
         run: composer phpcs
 
@@ -26,10 +30,13 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
       - name: Install Composer dependencies
         uses: ramsey/composer-install@v2
+
       - name: Show PHPLint version info
         run: ./vendor/bin/phplint --version
+
       - name: Run PHPLint
         run: composer phplint
 
@@ -37,31 +44,43 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+
     - uses: actions/setup-node@v4
       with:
         node-version: lts/*
+
     - uses: pnpm/action-setup@v4
       name: Install pnpm
       with:
         version: 10
         run_install: false
+
     - name: Install Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 20
         cache: 'pnpm'
+
     - name: Install dependencies
       run: pnpm install
+
     - name: Install Playwright browsers
       run: pnpm exec playwright install --with-deps chromium
+
     - name: Set up Docker
       uses: docker/setup-buildx-action@v3
       with:
         platforms: linux/amd64
+
+    - name: Install Docker Compose
+      run: sudo apt-get update && sudo apt-get install -y docker-compose
+
     - name: Start WordPress environment
       run: pnpm wp-env start
+
     - name: Run Playwright tests
       run: npx playwright test
+
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
