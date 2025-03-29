@@ -2,7 +2,7 @@
 /**
  * Plugin Name: SMNTCS Show Active Plugins
  * Plugin URI: http://github.com/nielslange/smntcs-show-active-plugins
- * Description: This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
+ * Description: This plugin adds a submenu item to the plugins menu item, that links to all active plugins.
  * Version: 1.0
  * Author: Niels Lange
  * Author URI: http://nielslange.de
@@ -22,7 +22,7 @@ defined( 'ABSPATH' ) || exit;
 if ( ! function_exists( 'get_plugin_data' ) ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 }
-$plugin_data = get_plugin_data( __FILE__ );
+$plugin_data = get_plugin_data( __FILE__, false, /* $translate */ false );
 $version     = $plugin_data['Version'];
 define( 'SMNTCS_SHOW_ACTIVE_PLUGINS_VERSION', $version );
 

@@ -1,6 +1,6 @@
 {
 	"name": "smntcs-show-active-plugins",
-	"description": "This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.",
+	"description": "This plugin adds a submenu item to the plugins menu item, that links to all active plugins.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",

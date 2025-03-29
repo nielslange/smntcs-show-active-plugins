@@ -56,7 +56,7 @@ class SMNTCS_Show_Active_Plugins {
 	}
 
 	/**
-	 * Add a submenu item to the Plugins menu item, that links to all active plugins.
+	 * Add a submenu item to the plugins menu item, that links to all active plugins.
 	 *
 	 * @return void
 	 */

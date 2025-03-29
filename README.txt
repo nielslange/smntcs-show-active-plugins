@@ -9,11 +9,11 @@ Requires at least: 	5.2
 License: 			GPL v2 or later
 License URI: 		https://www.gnu.org/licenses/gpl-2.0.html
 
-This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
+This plugin adds a submenu item to the plugins menu item, that links to all active plugins.
 
 == Description ==
 
-This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
+This plugin adds a submenu item to the plugins menu item, that links to all active plugins.
 
 == Installation ==
 

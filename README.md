@@ -1,10 +1,10 @@
 # SMNTCS Show Active Plugins
 
-This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
+This plugin adds a submenu item to the plugins menu item, that links to all active plugins.
 
 ## Description
 
-This plugin adds a submenu item to the Plugins menu item, that links to all active plugins. This is useful if you have a lot of plugins installed and want to quickly want to access all active plugins.
+This plugin adds a submenu item to the plugins menu item, that links to all active plugins. This is useful if you have a lot of plugins installed and want to quickly want to access all active plugins.
 
 ## Screenshot
 
