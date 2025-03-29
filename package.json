@@ -16,16 +16,23 @@
 		"url": "https://github.com/nielslange/smntcs-show-active-plugins/issues"
 	},
 	"devDependencies": {
+		"@playwright/test": "^1.51.1",
+		"@types/node": "^22.13.14",
 		"@wordpress/env": "5.15.0",
 		"@wordpress/prettier-config": "2.13.0",
 		"eslint": "^8.37.0",
-		"prettier": "npm:wp-prettier@^2.8.5"
+		"prettier": "npm:wp-prettier@^2.8.5",
+		"typescript": "^5.8.2"
 	},
 	"scripts": {
 		"build:zip": "bash ./bin/bundle.sh",
 		"phpcbf": "composer run phpcbf",
 		"phpcs": "composer run phpcs",
 		"phplint": "composer run phplint",
+		"test": "pnpm phplint && pnpm phpcbf && pnpm phpcs",
+		"test:e2e": "playwright test",
+		"test:e2e:ui": "playwright test --ui",
+		"test:e2e:debug": "playwright test --debug",
 		"wp-env": "wp-env"
 	}
 }

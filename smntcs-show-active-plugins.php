@@ -3,7 +3,7 @@
  * Plugin Name: SMNTCS Show Active Plugins
  * Plugin URI: http://github.com/nielslange/smntcs-show-active-plugins
  * Description: This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
- * Version: 0.2
+ * Version: 1.0
  * Author: Niels Lange
  * Author URI: http://nielslange.de
  * License: GPL2
@@ -13,44 +13,21 @@
  * @package smntcs-show-active-plugins
  */
 
+declare(strict_types=1);
 defined( 'ABSPATH' ) || exit;
 
 /**
  * Define constants.
  */
-define( 'SMNTCS_SHOW_ACTIVE_PLUGINS_VERSION', '0.2' );
+if ( ! function_exists( 'get_plugin_data' ) ) {
+	require_once ABSPATH . 'wp-admin/includes/plugin.php';
+}
+$plugin_data = get_plugin_data( __FILE__ );
+$version     = $plugin_data['Version'];
+define( 'SMNTCS_SHOW_ACTIVE_PLUGINS_VERSION', $version );
 
 /**
- * Add a submenu item to the Plugins menu item, that links to all active plugins.
+ * Initialize the plugin
  */
-function smntcs_show_active_plugins_menu() {
-	add_plugins_page(
-		__( 'Active Plugins', 'smntcs-show-active-plugins' ),
-		__( 'Active Plugins', 'smntcs-show-active-plugins' ),
-		'manage_options',
-		'plugins.php?plugin_status=active',
-		'',
-		1
-	);
-}
-add_action( 'admin_menu', 'smntcs_show_active_plugins_menu' );
-
-/**
- * Enqueue script to highlight the Active Plugins submenu item.
- *
- * @param string $hook The current admin page hook.
- */
-function smntcs_enqueue_scripts( $hook ) {
-	if ( 'plugins.php' !== $hook ) {
-		return;
-	}
-
-	wp_enqueue_script(
-		'smntcs-show-active-plugins-script',
-		plugins_url( '/assets/js/script.js', __FILE__ ),
-		array(),
-		SMNTCS_SHOW_ACTIVE_PLUGINS_VERSION,
-		true
-	);
-}
-add_action( 'admin_enqueue_scripts', 'smntcs_enqueue_scripts' );
+require_once plugin_dir_path( __FILE__ ) . 'includes/class-smntcs-show-active-plugins.php';
+SMNTCS_Show_Active_Plugins::init();

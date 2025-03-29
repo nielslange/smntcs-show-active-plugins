@@ -1,6 +1,17 @@
+# Dependencies
 node_modules
 vendor
+
+# PHP Linting
 phplint.cache
 .phplint.cache
 .phplint-cache
+
+# System Files
 .DS_Store
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
