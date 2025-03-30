@@ -1,10 +1,10 @@
 # SMNTCS Show Active Plugins
 
-This plugin adds a submenu item to the plugins menu item, that links to all active plugins.
+By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
 
 ## Description
 
-This plugin adds a submenu item to the plugins menu item, that links to all active plugins. This is useful if you have a lot of plugins installed and want to quickly want to access all active plugins.
+By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins. This is useful if you have a lot of plugins installed and want to quickly want to access all active plugins.
 
 ## Screenshot
 
@@ -21,6 +21,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-show-active-plug
 3. Go to the `Plugins` menu and click on `Show Active Plugins`.
 
 ## Changelog
+
+### 1.1 (2025.03.30)
+
+- Optimise the plugin description.
 
 ### 1.0 (2025.03.29)
 

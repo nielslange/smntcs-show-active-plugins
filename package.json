@@ -1,6 +1,6 @@
 {
 	"name": "smntcs-show-active-plugins",
-	"description": "This plugin adds a submenu item to the plugins menu item, that links to all active plugins.",
+	"description": "By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.",
 	"license": "GPL-2.0-or-later",
 	"keywords": [
 		"WordPress",
