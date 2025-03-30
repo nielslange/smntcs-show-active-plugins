@@ -28,4 +28,4 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-show-active-plug
 
 ### 1.0 (2025.03.29)
 
-- Initial release
+- Initial release.
