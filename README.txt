@@ -2,18 +2,18 @@
 
 Contributors: 		nielslange
 Tags: 				Plugins, View active plugins
-Stable tag: 		1.1
-Tested up to: 		6.8
+Stable tag: 		1.0
+Tested up to: 		6.6
 Requires PHP: 		7.4
 Requires at least: 	5.2
 License: 			GPL v2 or later
 License URI: 		https://www.gnu.org/licenses/gpl-2.0.html
 
-By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
+This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
 
 == Description ==
 
-By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
+This plugin adds a submenu item to the Plugins menu item, that links to all active plugins.
 
 == Installation ==
 
@@ -27,10 +27,6 @@ Contributions are more than welcome. Simply head over to [Github](https://github
 
 == Changelog ==
 
-= 1.1 (2025.03.30) =
+= 1.0 (2023.04.23) =
 
-- Optimise the plugin description.
-
-= 1.0 (2025.03.29) =
-
-- Initial release.
+- Initial release

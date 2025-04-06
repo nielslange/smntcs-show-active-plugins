@@ -1,41 +1,45 @@
 name: Run PHPCS and PHPLint
 
-on: [push, pull_request]
+on:
+    pull_request:
+    push:
+        branches:
+            - trunk
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
-  PHPCS:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    PHPCS:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v2
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v3
 
-      - name: Show PHPCS sniffs
-        run: ./vendor/bin/phpcs -i
+            - name: Show PHPCS sniffs
+              run: ./vendor/bin/phpcs -i
 
-      - name: Show PHPCS version
-        run: ./vendor/bin/phpcs --version
+            - name: Show PHPCS version
+              run: ./vendor/bin/phpcs --version
 
-      - name: Run PHP_CodeSniffer
-        run: composer phpcs
+            - name: Run PHP_CodeSniffer
+              run: composer phpcs
 
-  PHPLint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+    PHPLint:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Install Composer dependencies
-        uses: ramsey/composer-install@v2
+            - name: Install Composer dependencies
+              uses: ramsey/composer-install@v3
 
-      - name: Show PHPLint version info
-        run: ./vendor/bin/phplint --version
+            - name: Show PHPLint version info
+              run: ./vendor/bin/phplint --version
 
-      - name: Run PHPLint
-        run: composer phplint
+            - name: Run PHPLint
+              run: composer phplint

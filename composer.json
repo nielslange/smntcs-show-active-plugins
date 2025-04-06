@@ -1,6 +1,13 @@
 {
 	"name": "nielslange/smntcs-show-active-plugins",
+	"description": "Shows the active plugins in the WordPress admin dashboard.",
+	"homepage": "https://github.com/nielslange/smntcs-show-active-plugins",
 	"type": "wordpress-plugin",
+	"keywords": [
+		"WordPress",
+		"Plugin",
+		"SMNTCS Show Active Plugins"
+	],
 	"license": "GPL-2.0-or-later",
 	"authors": [
 		{
@@ -8,9 +15,6 @@
 			"email": "info@nielslange.de"
 		}
 	],
-	"require": {
-		"php": ">=7.4"
-	},
 	"require-dev": {
 		"dealerdirect/phpcodesniffer-composer-installer": "^1.0",
 		"phpcompatibility/phpcompatibility-wp": "^2.1",
