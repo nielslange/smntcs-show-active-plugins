@@ -3,7 +3,7 @@
  * Plugin Name: SMNTCS Show Active Plugins
  * Plugin URI: http://github.com/nielslange/smntcs-show-active-plugins
  * Description: By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
- * Version: 1.1
+ * Version: 1.2
  * Author: Niels Lange
  * Author URI: http://nielslange.de
  * License: GPL2
