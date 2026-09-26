@@ -22,6 +22,11 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-show-active-plug
 
 ## Changelog
 
+### 1.3 (2026.09.26)
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
+
 ### 1.2 (2026.08.14)
 
 - Test up to WordPress 7.0

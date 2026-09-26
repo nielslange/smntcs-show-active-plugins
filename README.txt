@@ -1,19 +1,21 @@
 === SMNTCS Show Active Plugins ===
 
-Contributors: 		nielslange
-Tags: 				Plugins, View active plugins
-Stable tag: 		1.2
-Tested up to: 		7.0
-Requires PHP: 		7.4
-Requires at least: 	5.2
-License: 			GPL v2 or later
-License URI: 		https://www.gnu.org/licenses/gpl-2.0.html
+Contributors:       nielslange
+Tags:               plugins, active plugins, admin menu, navigation, admin
+Requires at least:  None
+Tested up to:       7.1
+Requires PHP:       None
+Stable tag:         1.3
+License:            GPL v2 or later
+License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
-By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
+Adds an Active Plugins link to the Plugins menu, so you can see all active plugins in one click.
 
 == Description ==
 
-By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
+The Plugins menu in WordPress links to Installed Plugins and Add New Plugin. To see only the active plugins you have to open Installed Plugins and then pick the Active view.
+
+SMNTCS Show Active Plugins adds an Active Plugins link to the Plugins menu that takes you straight there.
 
 == Installation ==
 
@@ -23,9 +25,14 @@ By default, the WordPress plugin section includes menu links for "Installed Plug
 
 == Contribute ==
 
-Contributions are more than welcome. Simply head over to [Github](https://github.com/nielslange/smntcs-show-active-plugins) and open an issue or a pull request.
+Contributions are more than welcome. Simply head over to [GitHub](https://github.com/nielslange/smntcs-show-active-plugins) and open an issue or a pull request.
 
 == Changelog ==
+
+= 1.3 (2026.09.26) =
+
+- Test up to WordPress 7.1
+- Update development dependencies and GitHub Actions
 
 = 1.2 (2026.08.14) =
 
