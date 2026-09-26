@@ -15,3 +15,5 @@ phplint.cache
 /playwright-report/
 /blob-report/
 /playwright/.cache/
+cypress/screenshots
+cypress/videos
