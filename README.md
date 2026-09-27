@@ -31,6 +31,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-show-active-plug
 
 ## Changelog
 
+### 1.5 (2026.09.27)
+
+- Clarify the licence as GPL v2 or later
+
 ### 1.4 (2026.09.27)
 
 - Restore the required WordPress and PHP versions in the readme
