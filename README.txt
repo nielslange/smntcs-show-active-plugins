@@ -5,7 +5,7 @@ Tags:               plugins, active plugins, admin menu, navigation, admin
 Requires at least:  5.2
 Tested up to:       7.1
 Requires PHP:       7.4
-Stable tag:         1.4
+Stable tag:         1.5
 License:            GPL v2 or later
 License URI:        https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -28,6 +28,10 @@ SMNTCS Show Active Plugins adds an Active Plugins link to the Plugins menu that 
 Contributions are more than welcome. Simply head over to [GitHub](https://github.com/nielslange/smntcs-show-active-plugins) and open an issue or a pull request.
 
 == Changelog ==
+
+= 1.5 (2026.09.27) =
+
+- Clarify the licence as GPL v2 or later
 
 = 1.4 (2026.09.27) =
 
