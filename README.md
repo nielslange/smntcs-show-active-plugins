@@ -1,5 +1,14 @@
 # SMNTCS Show Active Plugins
 
+![Support Level](https://img.shields.io/badge/support-active-green.svg)
+![Build Status](https://github.com/nielslange/smntcs-show-active-plugins/actions/workflows/test.yml/badge.svg)
+![GPLv2 License](https://img.shields.io/github/license/nielslange/smntcs-show-active-plugins.svg)
+![Compatible to WordPress version](https://img.shields.io/wordpress/plugin/tested/smntcs-show-active-plugins.svg)
+![Compatible to PHP version](https://img.shields.io/wordpress/plugin/required-php/smntcs-show-active-plugins.svg)
+![Downloads](https://img.shields.io/wordpress/plugin/dt/smntcs-show-active-plugins.svg)
+![Plugin Version](https://img.shields.io/wordpress/plugin/v/smntcs-show-active-plugins.svg)
+![Tag Version](https://img.shields.io/github/tag/nielslange/smntcs-show-active-plugins.svg)
+
 By default, the WordPress plugin section includes menu links for "Installed Plugins" and "Add New Plugin". This plugin enhances navigation efficiency by adding a new menu link titled "Active Plugins". This direct link allows users to immediately view all active plugins without the need to first navigate through "Installed Plugins" and select the view to show active plugins.
 
 ## Description
@@ -21,6 +30,10 @@ You can find the plugin on https://wordpress.org/plugins/smntcs-show-active-plug
 3. Go to the `Plugins` menu and click on `Show Active Plugins`.
 
 ## Changelog
+
+### 1.4 (2026.09.27)
+
+- Restore the required WordPress and PHP versions in the readme
 
 ### 1.3 (2026.09.26)
 
