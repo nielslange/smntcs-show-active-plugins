@@ -17,3 +17,4 @@ phplint.cache
 /playwright/.cache/
 cypress/screenshots
 cypress/videos
+/artifacts/
